@@ -17,6 +17,15 @@ It attempted to look up the commit at https://bcr.bazel.build/api/v3/repos/bazel
 Correctly detect the new commit for `rules_cc`. This desired behavior can be achieved
 by commenting out the registry flag in `.bazelrc`
 
+Note that a potential workaround is as follows in the `.bazelrc`:
+
+```bash
+common:default --registry=https://bcr.bazel.build
+common --config=default
+```
+
+This makes Bazel ignore the registry flag, but it still gets used by Bazel to build with.
+
 ## Link to the Renovate issue or Discussion
 
 See [the discussion](https://github.com/renovatebot/renovate/discussions/33748)
