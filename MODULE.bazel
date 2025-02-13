@@ -1,0 +1,12 @@
+module(
+    name = "git_override_test",
+    version = "0.0.1",
+    compatibility_level = 1,
+)
+
+bazel_dep(name = "rules_cc", version = "0.1.0")
+bazel_dep(name = "rules_python", version = "1.0.0")
+
+git_override(module_name = "rules_cc",
+             commit = "e55d9c495f23149316f16263d5232047cfff95b8",
+             remote = "https://github.com/bazelbuild/rules_cc")
