@@ -1,2 +1,2 @@
-common --registry=https://api.github.com
+common # --registry=https://api.github.com
 common --registry=https://bcr.bazel.build
