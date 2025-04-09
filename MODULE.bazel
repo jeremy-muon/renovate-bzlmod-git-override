@@ -8,5 +8,5 @@ bazel_dep(name = "rules_cc", version = "0.1.0")
 bazel_dep(name = "rules_python", version = "1.0.0")
 
 git_override(module_name = "rules_cc",
-             commit = "e55d9c495f23149316f16263d5232047cfff95b8",
+             commit = "15c158886752ceddb4d6bac17e7b5a74feab53b5",
              remote = "https://github.com/bazelbuild/rules_cc")
